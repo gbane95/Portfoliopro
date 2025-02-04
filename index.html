@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Développeur Full Stack</title>
+    <link href="all/img/favicon.png" rel="icon">
+    <link href="./vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary bg-opacity-50">
+        <div class="container">
+            <a href="index.html" class="font-weight-bold gradient-text shadow-lg">TIDJANE GBANE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets réalisés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold">Salut je suis</h2>
+                    <h1 class="display-5 fw-bold mb-4 text-warning">Gbané Tidjane Développeur Full Stack</h1>
+                    <p class="mb-4 text-secondary-emphasis fw-semibold">Passionné par la création d'expériences web
+                        exceptionnelles, modernes et
+                        performantes, je combine créativité et expertise technique pour donner vie à vos projets
+                        numériques</p>
+                    <a href="#" class="btn btn-primary btn-lg">Télécharger CV</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-img">
+                        <img src="https://via.placeholder.com/500" alt="Profile"
+                            class="img-fluid rounded-circle shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">À propos</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h3>Compétences</h3>
+                    <div class="skill-bar mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4">Outils & Technologies</h3>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center ">
+                        <span class="badge bg-primary">Git</span>
+                        <span class="badge bg-primary">VS Code</span>
+                        <span class="badge bg-primary">Node.js</span>
+                        <span class="badge bg-primary">Docker</span>
+                        <span class="badge bg-primary">MongoDB</span>
+                        <span class="badge bg-primary">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-light p-5">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="text-center">Services</h2>
+            <p class="text-center">Solutions sur mesure pour vos besoins digitaux</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-4">
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card d-flex">
+                        <div class="icon flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 " fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>SEO</h3>
+                            <p>Augmenter la visibilité de votre site sur les moteurs de recherche. Rendre votre site
+                                plus agréable, accessible et intuitif pour les utilisateurs. Assurer la sécurité des
+                                données de vos utilisateurs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card d-flex">
+                        <div class="icon flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8s" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Création d'application web et mobile</h3>
+                            <p>Mon processus commence toujours par une analyse du projet, en m'assurant de bien
+                                comprendre les objectifs et le public cible.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card d-flex">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-easel"></i>
+                        </div>
+                        <div>
+                            <h3>Création de site web</h3>
+                            <p>Création de sites web moderne et fonctionnel, conçus pour répondre précisément aux
+                                besoins.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card d-flex">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+                        <div>
+                            <h3>Marketing digital et gestion des resseaux sociaux</h3>
+                            <p>Une approche stratégique et orientée pour aider les entreprises à accroître leur
+                                visibilité en ligne, attirer des clients et augmenter leur chiffre d'affaires.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projets réalisés</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="./image/resto.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Site pour restaurant</h5>
+                            <p class="card-text">
+                                Un site conçu pour mettre en valeur votre restaurant avec une interface élégante
+                                et intuitive. Il permet aux visiteurs de découvrir votre établissement, consulter votre
+                                menu et réserver une table en quelques clics.</p>
+
+                            <a href="https://gbane95.github.io/Checkpoint-bootstrap-resto-voyage/index.html"
+                                target="_blank" class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="./image/voy.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Agent de voyage</h5>
+                            <p class="card-text">Un site conçu pour inspirer et guider vos clients dans le choix
+                                de leurs prochaines destinations. Il met en avant vos offres, facilite les demandes de
+                                devis et renforce votre visibilité en ligne.</p>
+                            <a href="https://gbane95.github.io/Checkpoint-bootstrap-resto-voyage/voyage.html"
+                                target="_blank" class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <img src="./image/bout.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Boutique de mode</h5>
+                            <p class="card-text">Un site conçu pour mettre en valeur votre boutique de mode et
+                                séduire vos clients en ligne. Il permet de présenter vos collections, informer sur vos
+                                offres et attirer plus de visiteurs en magasin.</p>
+                            <a href="https://gbane95.github.io/Checkpoint-bootstrap-boutique/" target="_blank"
+                                class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section temoignage-->
+    <section id="temoignage" class="temoignage section mt-4 mb-5">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="text-center mb-4">Temoignage des clients</h2>
+            <p class="text-center mb-4">Explorez les témoignages de mes clients sur leur collaboration avec moi.<br />
+                Leur satisfaction est ma plus grande fierté !</p>
+        </div>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="temoignage-item">
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo &amp; Founder</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Le site e-commerce que vous avez conçu pour nous est tout simplement génial ! Il est
+                                non seulement moderne, mais aussi optimisé pour une navigation fluide, ce qui va
+                                clairement améliorer notre taux de conversion.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="temoignage-item">
+                        <h3>Sara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Votre approche du marketing digital a transformé notre présence en ligne. Le site est
+                                bien conçu, et grâce à vos stratégies, nous avons déjà vu une hausse notable du trafic
+                                et des ventes.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="temoignage-item">
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Merci pour ce superbe travail ! Le site e-commerce est rapide, bien structuré et très
+                                intuitif, ce qui rend l'expérience d'achat de nos clients bien plus agréable..</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="temoignage-item">
+                        <h3>Matt Brandon</h3>
+                        <h4>Freelancer</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>Le site e-commerce que vous avez créé est exactement ce dont nous avions besoin, avec
+                                un design moderne et une navigation fluide qui améliorent l'expérience
+                                utilisateur.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section py-4 bg-body-tertiary">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="text-center mb-4">Contact</h2>
+            <p class="text-center mb-4">Je suis à votre disposition pour des projets en freelance. Une fois que vous
+                êtes prêt, n'hésitez pas à
+                me le faire savoir !</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row g-4 g-lg-5">
+                <div class="col-lg-5">
+                    <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-center">Informations de Contact</h3>
+                        <p class="text-center">Voici mes coordonnées pour toute question ou demande d'information.</p>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon-box">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Localisation</h4>
+                                <p>Koumassi progrès 1</p>
+                                <p>Abidjan, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="icon-box">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Numéro de Téléphone</h4>
+                                <p>+225 07 87 19 42 96</p>
+                                <p>+225 05 75 43 37 48</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="icon-box">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="me-5">Adresse Email</h4>
+                                <p>tidjaneg95@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-center mb-3">Nous Contactez</h3>
+                        <form action="forms/contact.php" method="post" class="email-form" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Entrez votre nom"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="prenom"
+                                        placeholder="Entrez votre prenom" required="">
+                                </div>
+
+                                <div class="col-12">
+                                    <input type="email" class="form-control" name="email" placeholder="Adresse email"
+                                        required="">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                        required=""></textarea>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn">Envoyer</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendors/js/script.js"></script>
+</body>
+
+</html>
