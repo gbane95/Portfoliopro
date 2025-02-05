@@ -6,35 +6,29 @@
 }
 
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
-
-
-:root { 
-  --background-color: #ffffff; 
-  --default-color: #212529; 
-  --heading-color: #2d465e; 
-  --accent-color: #0d83fd;
-  --contrast-color: #ffffff;
-  --Jaune-color:#ffff00;
-}
-
-
 
 :root {
-  --nav-color: #2870b8; 
-  --nav-hover-color: #2b68a8;
-  --nav-mobile-background-color: #ffffff67; 
-  --nav-dropdown-background-color: #ffffff54;
-  --nav-dropdown-color: #7ba5cf; 
-  --nav-dropdown-hover-color: #3078c5; 
+  --background-color: #ffffff;
+  --default-color: #212529;
+  --heading-color: #2d465e;
+  --accent-color: #0d83fd;
+  --contrast-color: #ffffff;
+  --Jaune-color: #ffff00;
 }
 
-[data-bs-theme="dark"] {
-  --primary-color: #64b5f6;
-  --secondary-color: #7986cb;
+:root {
+  --nav-color: #2870b8;
+  --nav-hover-color: #2b68a8;
+  --nav-mobile-background-color: #ffffff67;
+  --nav-dropdown-background-color: #ffffff54;
+  --nav-dropdown-color: #7ba5cf;
+  --nav-dropdown-hover-color: #3078c5;
 }
 
 .gradient-text {
@@ -51,11 +45,6 @@ body {
   padding-top: 56px;
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Hero Section */
 .hero {
   background: linear-gradient(
@@ -63,9 +52,10 @@ html {
     var(--primary-color) 0%,
     var(--secondary-color) 100%
   );
-  color: white;
-  position: relative;
-  overflow: hidden;
+}
+
+.nom {
+  color: #ffeb3b;
 }
 
 .hero-img {
@@ -82,86 +72,88 @@ html {
   }
 }
 
-/* Progress Bar */
-.progress-bar {
-  background-color: #007bff; /* Bleu */
-  animation: progressAnimation 3s ease-in-out forwards; /* Animation pour la barre */
+/* Styles pour les barres de compétences */
+.progress {
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.1); /* Couleur de fond de la barre */
+  border-radius: 4px;
+  overflow: hidden; /* Cache le débordement */
 }
 
-/* Personnalisation de la barre de progression */
-.progress {
-    height: 8px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+.progress-bar {
+  height: 100%;
+  background-color: #4a90e2; /* Couleur de la barre de progression */
+  width: 0; /* Démarre à 0% */
+  transition: width 2s ease; /* Animation fluide */
+}
+/* Services Section */
 
-  /* Services Section */
-  
-  .services .service-card {
-    height: 100%;
-    padding: 30px;
-    background: var(--surface-color);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-  }
-  
-  .services .service-card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  }
-  
-  .services .service-card:hover .icon {
-    background: var(--accent-color);
-    color: var(--contrast-color);
-  }
-  
-  .services .service-card:hover .read-more {
-    color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  }
-  
-  .services .service-card .icon {
-    width: 60px;
-    height: 60px;
-    margin-right: 30px;
-    background: color-mix(in srgb, var(--accent-color), transparent 90%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    color: var(--accent-color);
-    font-size: 28px;
-    transition: all 0.3s ease;
-    line-height: 1;
-  }
-  
-  .services .service-card h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 15px;
-  }
-  
-  .services .service-card p {
-    margin-bottom: 25px;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-    font-size: 15px;
-    line-height: 1.6;
-  }
-  
-  .services .service-card .read-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent-color);
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .services .service-card .read-more i {
-    font-size: 14px;
-    transition: transform 0.3s ease;
-  }
-  
-  .services .service-card .read-more:hover i {
-    transform: translateX(5px);
-  }
+.services .service-card {
+  height: 100%;
+  padding: 30px;
+  background: var(--surface-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.services .service-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.services .service-card:hover .icon {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.services .service-card:hover .read-more {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.services .service-card .icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 30px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--accent-color);
+  font-size: 28px;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.services .service-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services .service-card p {
+  margin-bottom: 25px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.services .service-card .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.services .service-card .read-more i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.services .service-card .read-more:hover i {
+  transform: translateX(5px);
+}
 
 /* Project Cards */
 .project-card {
@@ -183,63 +175,77 @@ html {
 
 /* temoignage section */
 
-.temoignage .temoignage-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  text-align: center;
+/* Section Témoignages */
+.temoignages-section {
+  background-color: #f8f9fa; /* Fond léger */
+  padding: 4rem 0;
 }
 
-.temoignage .temoignage-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  text-align: center;
+.temoignage-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temoignage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.temoignage-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.temoignage-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.temoignage-info h4 {
   margin: 0;
+  font-size: 1.25rem;
+  color: #2d465e;
 }
 
-.temoignage .temoignage-item .stars {
-  margin: 10px 0;
+.temoignage-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.temoignage-body {
   text-align: center;
 }
 
-.temoignage .temoignage-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.temoignage .temoignage-item .quote-icon-left,
-.temoignage .temoignage-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.temoignage .temoignage-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.temoignage .temoignage-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.temoignage .temoignage-item p {
+.temoignage-text {
   font-style: italic;
-  margin: 15px 0 0 0;
-  padding: 0;
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+.quote-icon-left,
+.quote-icon-right {
+  color: #4a90e2; /* Couleur des icônes de citation */
+  font-size: 1.5rem;
+}
+
+.stars {
+  color: #ffc107; /* Couleur des étoiles */
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 /* Social Icons */
 .bi {
   transition: color var(--transition-speed);
 }
-
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -400,5 +406,9 @@ html {
 }
 
 .contact .contact-form .btn:hover {
-  background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+  background-color: color-mix(
+    in srgb,
+    var(--accent-color),
+    var(--contrast-color) 20%
+  );
 }
